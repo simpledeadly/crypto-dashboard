@@ -1,0 +1,24 @@
+@use './base' as *;
+
+.headerStyle {
+  text-align: center;
+  color: #fff;
+  height: 60px;
+  padding-inline: 48px;
+  line-height: 64px;
+  background-color: #4096ff;
+}
+
+.contentStyle {
+  text-align: center;
+  min-height: calc(100vh - 60px);
+  color: #fff;
+  background-color: #001529;
+}
+
+.siderStyle {
+  text-align: center;
+  line-height: 120px;
+  color: #fff;
+  background-color: #1677ff;
+}
