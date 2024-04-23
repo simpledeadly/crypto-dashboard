@@ -1,15 +1,11 @@
 import React from 'react'
-import { Layout } from 'antd'
-import { AppHeader, AppSider, AppContent } from './components'
+import { AppLayout } from './components'
+import { CryptoContextProvider } from './context/crypto-context'
 
 const App = () => (
-  <Layout>
-  <AppHeader />
-    <Layout>
-      <AppSider />
-      <AppContent />
-    </Layout>
-  </Layout>
+  <CryptoContextProvider>
+    <AppLayout />
+  </CryptoContextProvider>
 )
 
 export default App

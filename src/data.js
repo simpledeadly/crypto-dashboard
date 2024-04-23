@@ -113,7 +113,7 @@ export const cryptoData = {
       redditUrl: 'https://www.reddit.com/r/binance',
       websiteUrl: 'https://www.binance.com',
       twitterUrl: 'https://twitter.com/binance',
-      contractAddress: 'BNB',
+      contractAddress: '0x9rff56370e9ea5f0bad3c4e29711ad5006fea8h1',
       decimals: 18,
       explorers: [
         'https://bscscan.com',
@@ -629,6 +629,7 @@ export const cryptoAssets = [
   {
     id: 'dogecoin',
     amount: 10000,
-    price: 0.072
+    price: 0.075,
+    date: new Date()
   }
 ]
