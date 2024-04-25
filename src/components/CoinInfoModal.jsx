@@ -1,15 +1,11 @@
 import { Flex, Tag, Typography, Divider } from 'antd'
+import { CoinInfo } from './CoinInfo'
 const { Title, Text, Paragraph } = Typography
 
 export const CoinInfoModal = ({ coin }) => {
 	return (
 		<>
-			<Flex align='center'>
-				<img src={coin.icon} alt={coin.name} style={{ width: 40, marginRight: 10 }} />
-				<Title level={2} style={{ margin: 0 }}>
-					{coin.symbol} ({coin.name})
-				</Title>
-			</Flex>
+			<CoinInfo coin={coin} withSymbol />
 			<Divider />
 			<Paragraph>
 				<Text strong>1 hour: </Text>

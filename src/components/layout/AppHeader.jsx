@@ -72,8 +72,14 @@ export const AppHeader = () => {
         <CoinInfoModal coin={coin} />
       </Modal>
 
-      <Drawer width={500} title='Add asset' onClose={() => setDrawer(false)} open={drawer}>
-        <AddAssetForm />
+      <Drawer
+        width={600}
+        title='Add asset'
+        onClose={() => setDrawer(false)}
+        open={drawer}
+        destroyOnClose
+      >
+        <AddAssetForm onClose={() => setDrawer(false)} />
       </Drawer>
     </Layout.Header>
   )

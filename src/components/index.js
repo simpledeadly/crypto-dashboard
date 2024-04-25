@@ -2,6 +2,7 @@
 export { CardComponent } from './Card'
 export { CoinInfoModal } from './CoinInfoModal'
 export { AddAssetForm } from './AddAssetForm'
+export { CoinInfo } from './CoinInfo'
 
 // Layouts
 export { AppHeader } from './layout/AppHeader'
