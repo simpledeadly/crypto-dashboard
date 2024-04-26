@@ -9,7 +9,7 @@ export const AddAssetForm = ({ onClose }) => {
 	const [form] = Form.useForm()
 	const { price, addAsset } = useCrypto()
 	const assetRef = useRef()
-
+	
 	if (submitted) {
 		return (
 			<>
@@ -177,8 +177,8 @@ export const AddAssetForm = ({ onClose }) => {
 						Add asset
 					</Button>
 					<Button htmlType='button' onClick={handlePriceRefresh}>
-            Refresh
-          </Button>
+						Refresh
+					</Button>
 				</Space>
 				</Form.Item>
 			</Form>
