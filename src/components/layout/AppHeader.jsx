@@ -37,14 +37,19 @@ export const AppHeader = () => {
     setModal(true)
   }
 
+  const filterOption = (input, option) => (option?.label ?? '').toLowerCase().includes(input.toLowerCase())
+
   return (
     <Layout.Header style={headerStyle}>
       <Select
+        showSearch
         open={select}
         style={{ width: 250 }}
         onSelect={handleSelect}
         onClick={() => setSelect(prev => !prev)}
-        value="press '/' to open"
+        filterOption={filterOption}
+        optionFilterProp='children'
+        value={`Coin's information`}
         optionLabelProp='label'
         options={price.map(coin => ({
           label: coin.name,
